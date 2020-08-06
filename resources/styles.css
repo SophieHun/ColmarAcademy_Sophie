@@ -1,0 +1,150 @@
+/* utilities */
+.u_bold {    font-weight: bold;}
+.u_p-10 {font-size: 10px;}
+.u_ul_default {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.u_a_default{text-decoration: none;}
+.u_flex {display: flex;}
+.u_color_dark-gray {color: #4A4A4A;} /*headers*/
+.u_color_light-gray {color:#9B9B9B ;} /*text*/
+.u_color_white {color: white;}
+.u_bg_color_9B {background-color: #9B9B9B;} 
+.u_bg_color_D8 {background-color: #D8D8D8;}
+.u_bg_color_DB {background-color: #DBDBDB;}
+.u_bg_color_4A {background-color: #4A4A4A;}
+.u_bg_color_EA {background-color: #EAEBEC;}
+.u_margin-auto{margin: auto 0;}
+.u_margin-16 {margin: 16px;}
+.u_margin-0{margin: 0;}
+.u_padding-0{padding: 0;}
+
+/*note section*
+* from 768px desktop!
+*Color-map:
+- header: 4A4A4A
+- p/text: 9B9B9B
+- banner mobil button: 9B9B9B
+- banner DT-bg: D8D8D8
+- banner mobil-bg: DBDBDB
+- banner text+desktop bottom: 4A4A4A
+- articles choosen one bg: D8D8D8
+- Start learning DT-bg: EAEBEC
+- Start learning header: 4A4A4A
+- Start learning mobil-button:D8D8D8
+- Thesis choosen one bg: D8D8D8
+*/
+
+
+/* composed*/
+
+html, body {
+   margin: 0;
+    color: #4a4a4a;
+    font-family: Arial, Helvetica, sans-serif;
+}
+p{
+    
+    color:  #9B9B9B;
+}
+
+h1 {
+   
+    color: #4A4A4A;
+}
+
+
+/*header*/
+
+ul.header-mobile {
+padding:  0 16px 0 24px;
+height: 64px;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+nav {
+    background-color: white;
+}
+/*header desktop*/
+.nav-desktop {
+    padding: 0 16px 0 24px;
+    justify-content: space-between;
+    text-align: center;
+    display: none;
+    height: 64px;
+}
+.nav-desktop-menu {
+    padding: 0 8px;
+}
+
+@media only screen and (min-width: 768px) {
+   
+    .nav-mobile {display: none;}
+    .nav-desktop{display: flex;}
+  }
+
+
+/*Banner section*/ 
+.banner {
+    flex-direction: column;
+    width: 100%;
+}
+.banner-img img {
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    height: auto;
+    margin-bottom: 16px;
+}
+.banner-button {
+    text-align: center;
+    margin: 8px 16px 32px 16px;
+}
+
+.banner p, h1 {
+    text-align: center;
+    margin: 16px;
+}
+
+@media only screen and (min-width: 768px) {
+.banner-button p {font-weight: normal;}
+.banner-button {
+    background-color: #4A4A4A;
+}
+}
+
+
+/*Articles section*/  
+/*Start learning section*/  
+/*Thesis exhibit section*/  
+/*Footer section*/ 
+
+.footer {
+    display:flex;
+    justify-content: space-between;
+    margin: 16px 24px 24px 24px;
+    
+    
+} 
+ 
+.foot-right ul {
+    text-align: right;
+    display: flex;
+}
+
+.foot-right li{
+    padding-left: 16px;
+    display: flex;
+}
+ 
+
+
+@media only screen and (max-width: 767px) {
+    .foot-right p {
+    display: none;
+    color: #4A4A4A;
+    }
+}
