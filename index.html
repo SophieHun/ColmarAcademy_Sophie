@@ -66,7 +66,63 @@
 
 
 
-<!--Articles section--> 
+<!--Articles section-->
+  <!--use picture tag for mobile!!-->
+<section class="article">
+    <ul class=" u_ul_default u_flex">
+        <!--li no.1 only for desktop; mobil first-->
+        <li class="article-card-main u_desktop-only">
+            <picture>
+                <img class="u_img_fit-in" src="./resources/images/information-main.jpg" alt="a man is reading a book in the nature">
+            </picture>
+            <div class="main-article"> 
+                <h1>It doesn't hurt to keep practicing</h1>
+                <p class="u_margin-24-0">"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus, nec consequat neque. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+                <p class="u_bold u_p-10 u_margin-0">Emanuel, Sr Strategist at Hiring.com</p>
+            </div>
+        </li>
+        <li class="article-card-small">
+            <ul class="article-cards u_ul_default">
+                <li class="article-card">                                     
+                    <picture class="oriantation">
+                        <source media="(min-width: 768px)" srcset="./resources/images/information-orientation.jpg">
+                        <img class="u_img_fit-in article-img-small-desktop" src="./resources/images/information-orientation-mobile.jpg" alt="people walking">                        
+                    </picture>
+                    <div class="article-card-text">
+                        <h2>Orientation date</h2>
+                        <p>Tue 10/11 & Wwd 10/12: 8am-3pm</p>
+                        <a href="#" class="u_a_default"><p class="article-card-text-link">Read more</p></a> 
+                    </div>
+                </li>
+                <li class="article-card">
+                    <picture>
+                        <source media="(min-width: 768px)" srcset="./resources/images/information-campus.jpg">
+                        <img class="u_img_fit-in" src="./resources/images/information-campus-mobile.jpg" alt="classroom">                        
+                    </picture>
+                    <div class="article-card-text">
+                        <h2>Ouer campus</h2>
+                        <p>Find which campus is close by you</p>
+                        <a href="#" class="u_a_default"><p class="article-card-text-link">Read more</p></a>
+                    </div>
+                </li>
+                <li class="article-card article-card-gray">
+                    <picture>
+                        <source media="(min-width:768px)" srcset="./resources/images/information-guest-lecture.jpg">
+                        <img class="u_img_fit-in" src="./resources/images/information-guest-lecture-mobile.jpg" alt="old man" style="height:auto;">                        
+                    </picture>
+                    <div class="article-card-text ">
+                        <h2 class="mobile-h2">Special guest lecture</h2> <!-- mobile-->
+                        <h2 class="desktop-h2">Our guest lecture</h2> <!-- desktop-->
+                        <p>Join a keynotw with Oliver Sack about music in medical treatment</p>
+                        <a href="#" class="u_a_default"><p class="article-card-text-link">Read more</p></a>
+                    </div>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</section>
+
+
 <!--Start learning section--> 
 <!--Thesis exhibit section-->
 

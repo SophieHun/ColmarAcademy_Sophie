@@ -17,9 +17,19 @@
 .u_bg_color_4A {background-color: #4A4A4A;}
 .u_bg_color_EA {background-color: #EAEBEC;}
 .u_margin-auto{margin: auto 0;}
+.u_margin-24-0 {margin: 24px 0;}
 .u_margin-16 {margin: 16px;}
 .u_margin-0{margin: 0;}
 .u_padding-0{padding: 0;}
+.u_width-40 {width: 40%;}
+.u_width-60 {width: 60%;}
+.u_desktop-only {display: none;}
+.u_img_fit-in {
+    width: 100%;
+    background-size: cover;
+    object-fit: cover;
+    height: auto;
+}
 
 /*note section*
 * from 768px desktop!
@@ -104,8 +114,7 @@ nav {
 
 .banner-button {
     text-align: center;
-    margin: 0 16px 32px 16px;
-    
+    margin: 0 16px 32px 16px;  
 }
 .banner-button p {text-align: center;
     padding: 8px 0;}
@@ -113,8 +122,6 @@ nav {
 @media only screen and (min-width: 768px) {
 .banner {flex-direction: row;}
 .banner-button p {font-weight: normal;}
-   
-
 .banner h1 {margin: 0 32}
 .banner-button {background-color: #4A4A4A;}
 .banner-img {
@@ -136,7 +143,81 @@ nav {
  }
 
 
-/*Articles section*/  
+/*Articles section*/
+section.article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.article-cards {
+    justify-content: center;
+    flex-direction: column;
+}
+.article-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 16px;
+}
+
+.article-card picture {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    background-size: cover;
+}
+
+
+.article-card-text {
+    margin: 16px;
+}
+
+.article-card-text-link {
+    text-decoration: none;
+    color:-webkit-link;
+}
+
+.desktop-h2 {
+    display: none;
+}
+
+/*article desktop*/
+.article-card-main {
+    flex-direction: column;
+    width: 60%;
+    margin: 32px 24px 0;
+}
+.article-card-main h1 {
+    margin: 24px 0;
+}
+
+@media only screen and (min-width: 768px) {
+    section.article {margin-bottom: 32px;}
+    .article-cards {margin-top: 16px;}
+    .article-card {
+        flex-direction: row;
+        border-color: black;
+        border-width: medium;} 
+    .article-card-main {display: flex;}
+    .article-card-small {width: 40%;}
+    .article-card-text {
+        width: 65%;
+        margin: 0 16px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .article-card-text h2, p {margin:8px 0;
+    align-items: center;}
+    .article-card-gray {background-color: #d8d8d8;}
+    .article-card picture {width: 35%;} 
+    .mobile-h2 {display: none;}
+    .desktop-h2 {display: block;}
+
+}
+
+
 /*Start learning section*/  
 /*Thesis exhibit section*/  
 /*Footer section*/ 
@@ -157,8 +238,6 @@ nav {
     display: flex;
 }
  
-
-
 @media only screen and (max-width: 767px) {
     .foot-right p {
     display: none;
