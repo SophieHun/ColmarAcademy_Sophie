@@ -65,10 +65,8 @@
 </section>
 
 
-
 <!--Articles section-->
-  <!--use picture tag for mobile!!-->
-<section class="article">
+ <section class="article">
     <ul class=" u_ul_default u_flex">
         <!--li no.1 only for desktop; mobil first-->
         <li class="article-card-main u_desktop-only">
@@ -83,8 +81,8 @@
         </li>
         <li class="article-card-small">
             <ul class="article-cards u_ul_default">
-                <li class="article-card">                                     
-                    <picture class="oriantation">
+                <li class="article-card orientation">                                     
+                    <picture>
                         <source media="(min-width: 768px)" srcset="./resources/images/information-orientation.jpg">
                         <img class="u_img_fit-in article-img-small-desktop" src="./resources/images/information-orientation-mobile.jpg" alt="people walking">                        
                     </picture>
@@ -123,7 +121,6 @@
 </section>
 
 <!--Start learning section--> 
-<!-- Start learning - Mobile first-->
 <section class="start-learning">
     <h1>Start learning</h1>
     <ul class=" learning-cards u_ul_default">
@@ -207,21 +204,67 @@
         </li>
     </ul>
 </section>
-<!--Start learnin - desktop version-->
-
 
 <!--Thesis exhibit section-->
+<section class="thesis-exhibit">
+    <h1>Thesis exhibit</h1>
+    <ul class="thesis-cards u_ul_default">
+        <li class="thesis-card-video">
+          <a href="#" class="u_a_default">
+              <video width="100%" height="auto" controls >
+                <source src="./resources/videos/thesis.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+              </video>
+              <div class="thesis-card-video-text">
+                  <h2>Reimagine urban</h2>
+                  <p>"Curabitur vitae libero in ipsum porttitor consequant. Aliquam et commodo lectus nec consequat neque. Sed non accumsan urna. Phasellus sed consequant ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</p>
+              </div>
+          </a>  
+        </li>
+        <li class="thesis-card-subcards">
+            <ul class="u_ul_default">
+                <li class="thesis-subcard u_bg_color_D8">
+                    <a href="#" class="u_a_default u_flex">
+                        <img src="./resources/images/thesis-fisma.jpg" alt="designing">
+                        <div class="thesis-subcard-text">
+                            <h2>Fisma: Design and Prototype</h2>
+                            <p>Designer showcase of new prototype product</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="thesis-subcard">
+                    <a href="#" class="u_a_default u_flex">
+                        <img src="./resources/images/thesis-now-and-then.jpg" alt="New York">
+                        <div class="thesis-subcard-text">
+                            <h2>Now and then</h2>
+                            <p>Research study about New York</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</section>
 
-
-<!--Footer section-->    
+<!--Footer section--> 
+    <hr>
     <footer class="footer u_flex">
+        
         <div class="foot-left">
             <p class="u_margin-0 u_p-10">  © 2016 Colmar Academy All rights reserved</p>
         </div>
         <div class="foot-right">
             <ul class="u_ul_default u_flex u_margin-0">
-                <li ><p class="u_margin-0 u_p-10">Terms</p></li>
-                <li ><p class="u_margin-0 u_p-10">Privacy</p></li>
+                <li>
+                    <a href="#" class="u_a_default">
+                        <p class="u_margin-0 u_p-10  u_color_light-gray">Terms</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#" class="u_a_default">
+                        <p class="u_margin-0 u_p-10  u_color_light-gray">Privacy</p>
+                    </a>
+                </li>
             </ul>
         </div>
     </footer>
